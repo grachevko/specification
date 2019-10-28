@@ -1,0 +1,34 @@
+{
+    "name": "premier/specification",
+    "description": "Specification implementation",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Konstantin Grachev",
+            "email": "me@grachevko.ru"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Premier\\Specification\\": "src/"
+      },
+      "exclude-from-classmap": ["/tests/"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Premier\\Specification\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=7.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.4",
+        "friendsofphp/php-cs-fixer": "^2.15",
+        "phpstan/phpstan": "^0.11.19",
+        "vimeo/psalm": "^3.6",
+        "phpstan/phpstan-strict-rules": "^0.11.1",
+        "phpstan/phpstan-phpunit": "^0.11.2"
+    }
+}

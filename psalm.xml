@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<psalm
+        totallyTyped="false"
+        useDocblockTypes="true"
+        allowPhpStormGenerics="true"
+        requireVoidReturnType="true"
+        ignoreInternalFunctionFalseReturn="false"
+        ignoreInternalFunctionNullReturn="false"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="https://getpsalm.org/schema/config"
+        xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+>
+    <projectFiles>
+        <directory name="src"/>
+        <directory name="tests"/>
+        <ignoreFiles>
+            <directory name="vendor"/>
+        </ignoreFiles>
+    </projectFiles>
+
+    <issueHandlers>
+        <PossiblyFalseArgument errorLevel="info"/>
+        <PropertyNotSetInConstructor errorLevel="info"/>
+        <InternalMethod errorLevel="info"/>
+    </issueHandlers>
+</psalm>
